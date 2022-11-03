@@ -1,17 +1,18 @@
 <html>
   <head>
     <link rel="icon" href="images/iconlogo.png">
-    <title>PomoKodo</title>
+    <title>PomoKodo Countdown</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
   </head>
-  <body>
     <div class="main">
       <nav>
         <div class="logo">
+          <a href="home.html">
           <img src="images/logo.png">
+          </a>
         </div>
         <div class="nav-links">
           <ul>
@@ -27,8 +28,11 @@
           </ul>
         </div>
       </nav>
-      <div class="text-box">
-        <h1>Timer</h1>
-      </div>
+  <body>
+    <div class="text-box">
+    <div style="position:relative; font-size:200%; top:-20px;"><b>Timer</b></div>
+    <div id="Countdown"></div>
+    <script src="timer.js" class="timer-btn">Start</script>
+    </div>
   </body>
 </html>

@@ -1,0 +1,58 @@
+<!-- Importing main.js -->
+<script scr="main.js"></script>
+
+<!-- Start of Root.-->
+<!-- The 'html' element wraps all contents on entire page. -->
+<html>
+
+  <!-- Start of Head.-->
+  <!-- Settings for HTML document. Provides metadata on the file itself. -->
+  <head>
+    <!-- Adding PomoKodo orange to homepage -->
+    <link rel="icon" href="images/iconlogo.png">
+    <!-- Name of webpage. Shown in tab of the page. -->
+    <title>PomoKodo</title>
+    <!-- Inserting a style sheet to tell browser how to render webpage. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- The 'rel' attribute defines the relationship between a linked resource and the current document. -->
+    <!-- The 'preconnect' keyword informs browser that webpage intends to establish connection to the website below. Calling Google Fonts API.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  </head>
+  <!-- End of Head. -->
+
+  <!-- Start of Body -->
+  <!-- The 'body' element contains all the content that will be displayed to users. -->
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <a href="home.html">
+          <img src="images/logo.png">
+          </a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="home.html">HOME</a>
+            </li>
+            <li>
+              <a href="timer.html">TIMER</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h1>Welcome to PomoKodo</h1>
+        <p>The smart timer used to help you study LeetCode <br>problems, perfect for preventing burnout!</p>
+        <a href="timer.html" class="hero-btn">Go to Timer</a>
+      </div>
+  </body>
+  <!-- End of Body.-->
+
+</html>
+<!-- End of Root. -->

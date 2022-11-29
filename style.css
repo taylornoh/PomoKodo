@@ -11,7 +11,7 @@
     background: linear-gradient(to right, #f9ddb1, #ec9006);
 }
 nav{
-    width: 80%
+    width: 80%;
     position: sticky;
     z-index: 1;
     display: flex;
@@ -53,11 +53,11 @@ width: 100%
 }
 
 .text-box{
-    width: 90%;
+    width: 70%;
         color: #fff;
     position:absolute;
-    top: 50%;
-        left: 50%;
+    top: 55%;
+        left: 57%;
         transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -76,7 +76,7 @@ width: 100%
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size 13px;
+    font-size: 13px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -103,9 +103,8 @@ body {
   
   .base-timer {
     position: relative;
-    width: 400px;
-    height: 500px;
-    margin: 15px 150px;
+    width: 600px;
+    height: 700px;
   }
   
   .base-timer__svg {
@@ -148,7 +147,8 @@ body {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 40;
+    top: 140;
+    left: 95px;
     margin: 13px 47px;
     display: flex;
     align-items: center;
@@ -157,16 +157,17 @@ body {
   }
 
   .timer-btn{
-   margin: -15px 0px;
-   display: inline-block;
-   text-decoration: none;
-   color: #fff;
-   border: 1px solid #fff;
-   padding: 12px 34px;
-   font-size 13px;
-   background: transparent;
-   position: relative;
-   cursor: pointer;
+    background: transparent; /* Green background */
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    margin-bottom: 20px;
+    border-radius: 12px;
+    position:relative;
 }
 .timer-btn:hover{
    border: 1px solid #D16002;

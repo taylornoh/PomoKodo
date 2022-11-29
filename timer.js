@@ -20,7 +20,7 @@ const COLOR_CODES = {
   }
 };
 
-// Defining variables that are limited ot the scope of a block statement, or expresion on which it is used
+// Defining variables that are limited at the scope of a block statement, or expresion on which it is used
 const TIME_LIMIT = 1200;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
@@ -30,9 +30,9 @@ let remainingPathColor = COLOR_CODES.info.color;
 // Grabbing timer API
 // document.getElementById returns an element with a specified value
 // Creating a basic template for timer
-// Adding a Scalable vector graphic with a circl element inside to draw a timer ring that will
-// indicate the passing time and add a spant to show the remaining time value
-// We are writing the html in JavaScript and injecting into the DOM by targeting the #app element
+// Adding a Scalable vector graphic with a circle element inside to draw a timer ring that will
+// indicate the passing time and add a span to show the remaining time value
+// We are writing the html in JavaScript and injecting into the DOM by targeting the app element
 // DOM = Document Object Model
 document.getElementById("Countdown").innerHTML = `
 <div class="base-timer">

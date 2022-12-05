@@ -117,12 +117,12 @@
 
   .logo {
       flex-basis: 40%;
-      margin: 5px 15px;
+      margin: 15px 25px;
   }
 
 
   .logo img {
-      width: 230px;
+      width: 120px;
   }
 
 
@@ -185,6 +185,16 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+    .text-box-about {
+        width: 70%;
+        color: #fff;
+        position:absolute;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
   .text-box-timer-btns {
       width: 70%;

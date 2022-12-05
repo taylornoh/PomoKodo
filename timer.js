@@ -59,7 +59,6 @@ document.getElementById("Countdown").innerHTML = `
 `;
 
 // Calling startTimer function
-startTimer();
 
 // Defining a function that clears the timer
 function onTimesUp() {

@@ -57,10 +57,22 @@ width: 100%
         color: #fff;
     position:absolute;
     top: 55%;
-        left: 57%;
+        left: 55%;
         transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
+.text-box-timer-btns{
+  width: 70%;
+      color: #fff;
+  position:absolute;
+  top: 55%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .text-box h1 {
     font-size: 62px;
 }
@@ -168,6 +180,7 @@ body {
     margin-bottom: 20px;
     border-radius: 12px;
     position:relative;
+    display: block;
 }
 .timer-btn:hover{
    border: 1px solid #D16002;

@@ -21,7 +21,7 @@ const COLOR_CODES = {
 };
 
 // Defining variables that are limited at the scope of a block statement, or expresion on which it is used
-const TIME_LIMIT = 1800;
+let TIME_LIMIT = null;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -52,9 +52,7 @@ document.getElementById("Countdown").innerHTML = `
       ></path>
     </g>
   </svg>
-  <span id="base-timer-label" class="base-timer__label">${formatTime(
-    timeLeft
-  )}</span>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(timeLeft)}</span>
 </div>
 `;
 
@@ -68,6 +66,7 @@ function onTimesUp() {
 
 // Defining a function that starts the timer
 function startTimer() {
+  TIME_LIMIT = 1200;
   // setInterval is a built-in function that is used to set a delay
   // You can cancel the interval using clearInterval()
   timerInterval = setInterval(() => {
@@ -87,13 +86,13 @@ function startTimer() {
 }
 
 function startMediumTimer() {
-  let med_time_limit = 3000;
+  TIME_LIMIT = 3000;
   // setInterval is a built-in function that is used to set a delay
   // You can cancel the interval using clearInterval()
   timerInterval = setInterval(() => {
     // Timer logic
     timePassed = timePassed += 1;
-    timeLeft = med_time_limit - timePassed;
+    timeLeft = TIME_LIMIT - timePassed;
     document.getElementById("base-timer-label").innerHTML = formatTime(
       timeLeft
     );
@@ -107,13 +106,13 @@ function startMediumTimer() {
 }
 
 function startHardTimer() {
-  let med_time_limit = 4200;
+  TIME_LIMIT = 4200;
   // setInterval is a built-in function that is used to set a delay
   // You can cancel the interval using clearInterval()
   timerInterval = setInterval(() => {
     // Timer logic
     timePassed = timePassed += 1;
-    timeLeft = med_time_limit - timePassed;
+    timeLeft = TIME_LIMIT - timePassed;
     document.getElementById("base-timer-label").innerHTML = formatTime(
       timeLeft
     );
@@ -127,13 +126,13 @@ function startHardTimer() {
 }
 
 function startBreakTimer() {
-  let med_time_limit = 900;
+  TIME_LIMIT = 900;
   // setInterval is a built-in function that is used to set a delay
   // You can cancel the interval using clearInterval()
   timerInterval = setInterval(() => {
     // Timer logic
     timePassed = timePassed += 1;
-    timeLeft = med_time_limit - timePassed;
+    timeLeft = TIME_LIMIT - timePassed;
     document.getElementById("base-timer-label").innerHTML = formatTime(
       timeLeft
     );
@@ -147,13 +146,13 @@ function startBreakTimer() {
 }
 
 function startStudyTimer() {
-  let med_time_limit = 7200;
+  TIME_LIMIT = 7200;
   // setInterval is a built-in function that is used to set a delay
   // You can cancel the interval using clearInterval()
   timerInterval = setInterval(() => {
     // Timer logic
     timePassed = timePassed += 1;
-    timeLeft = med_time_limit - timePassed;
+    timeLeft = TIME_LIMIT - timePassed;
     document.getElementById("base-timer-label").innerHTML = formatTime(
       timeLeft
     );

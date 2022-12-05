@@ -136,6 +136,7 @@
       list-style: none;
       display: inline-block;
       margin: 0 30px;    /* 1st num=top/bot width, 2nd num=left&right width*/
+      left: 40%;
       position: relative;
   }
 
@@ -170,18 +171,27 @@
       color: #fff;
       position:absolute;
       top: 55%;
-      left: 55%;
+      left: 42%;
       transform: translate(-50%, -50%);
       text-align: center;
   }
 
+  .text-box-home {
+    width: 70%;
+    color: #fff;
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
   .text-box-timer-btns {
       width: 70%;
       color: #fff;
       position:absolute;
-      top: 55%;
-      left: 85%;
+      top: 52%;
+      left: 93%;
       transform: translate(-50%, -50%);
       text-align: center;
   }
@@ -192,7 +202,7 @@
       color: #fff;
       position:absolute;
       top: 85%;
-      left: 50%;
+      left: 53%;
       transform: translate(-50%, -50%);
       text-align: center;
   }
@@ -211,7 +221,7 @@
 
 
   .hero-btn {
-      margin: -15px 0px;
+      margin-top:70px;
       display: inline-block;
       text-decoration: none;
       color: #fff;

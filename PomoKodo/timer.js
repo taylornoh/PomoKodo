@@ -20,8 +20,8 @@ const COLOR_CODES = {
   }
 };
 
-// Defining variables that are limited at the scope of a block statement, or expresion on which it is used
-const TIME_LIMIT = 1800;
+// Defining variables that are limited ot the scope of a block statement, or expresion on which it is used
+const TIME_LIMIT = 1200;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -30,9 +30,9 @@ let remainingPathColor = COLOR_CODES.info.color;
 // Grabbing timer API
 // document.getElementById returns an element with a specified value
 // Creating a basic template for timer
-// Adding a Scalable vector graphic with a circle element inside to draw a timer ring that will
-// indicate the passing time and add a span to show the remaining time value
-// We are writing the html in JavaScript and injecting into the DOM by targeting the app element
+// Adding a Scalable vector graphic with a circl element inside to draw a timer ring that will
+// indicate the passing time and add a spant to show the remaining time value
+// We are writing the html in JavaScript and injecting into the DOM by targeting the #app element
 // DOM = Document Object Model
 document.getElementById("Countdown").innerHTML = `
 <div class="base-timer">
@@ -59,6 +59,7 @@ document.getElementById("Countdown").innerHTML = `
 `;
 
 // Calling startTimer function
+startTimer();
 
 // Defining a function that clears the timer
 function onTimesUp() {
@@ -74,86 +75,6 @@ function startTimer() {
     // Timer logic
     timePassed = timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
-    document.getElementById("base-timer-label").innerHTML = formatTime(
-      timeLeft
-    );
-    setCircleDasharray();
-    setRemainingPathColor(timeLeft);
-
-    if (timeLeft === 0) {
-      onTimesUp();
-    }
-  }, 1000);
-}
-
-function startMediumTimer() {
-  let med_time_limit = 3000;
-  // setInterval is a built-in function that is used to set a delay
-  // You can cancel the interval using clearInterval()
-  timerInterval = setInterval(() => {
-    // Timer logic
-    timePassed = timePassed += 1;
-    timeLeft = med_time_limit - timePassed;
-    document.getElementById("base-timer-label").innerHTML = formatTime(
-      timeLeft
-    );
-    setCircleDasharray();
-    setRemainingPathColor(timeLeft);
-
-    if (timeLeft === 0) {
-      onTimesUp();
-    }
-  }, 1000);
-}
-
-function startHardTimer() {
-  let med_time_limit = 4200;
-  // setInterval is a built-in function that is used to set a delay
-  // You can cancel the interval using clearInterval()
-  timerInterval = setInterval(() => {
-    // Timer logic
-    timePassed = timePassed += 1;
-    timeLeft = med_time_limit - timePassed;
-    document.getElementById("base-timer-label").innerHTML = formatTime(
-      timeLeft
-    );
-    setCircleDasharray();
-    setRemainingPathColor(timeLeft);
-
-    if (timeLeft === 0) {
-      onTimesUp();
-    }
-  }, 1000);
-}
-
-function startBreakTimer() {
-  let med_time_limit = 900;
-  // setInterval is a built-in function that is used to set a delay
-  // You can cancel the interval using clearInterval()
-  timerInterval = setInterval(() => {
-    // Timer logic
-    timePassed = timePassed += 1;
-    timeLeft = med_time_limit - timePassed;
-    document.getElementById("base-timer-label").innerHTML = formatTime(
-      timeLeft
-    );
-    setCircleDasharray();
-    setRemainingPathColor(timeLeft);
-
-    if (timeLeft === 0) {
-      onTimesUp();
-    }
-  }, 1000);
-}
-
-function startStudyTimer() {
-  let med_time_limit = 7200;
-  // setInterval is a built-in function that is used to set a delay
-  // You can cancel the interval using clearInterval()
-  timerInterval = setInterval(() => {
-    // Timer logic
-    timePassed = timePassed += 1;
-    timeLeft = med_time_limit - timePassed;
     document.getElementById("base-timer-label").innerHTML = formatTime(
       timeLeft
     );

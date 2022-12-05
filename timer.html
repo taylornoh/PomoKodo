@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <link rel="icon" href="images/iconlogo.png">
@@ -28,15 +29,48 @@
           </ul>
         </div>
       </nav>
-  <body>
-    <div id="Countdown" style="position:relative; font-size:200%; top:50px; right:-100px; color: #fff;"></div>
+
+
     <div class="text-box">
-    <div style="position:relative; font-size:200%; left:80px;"></div>
-      <script src="timer.js" class="timer-btn" style="float: right;">Easy</script>
-      <script src="timer.js" class="timer-btn" style="float: right;">Medium</script>
-      <script src="timer.js" class="timer-btn" style="float: right;">Hard</script>
-      <script src="timer.js" class="timer-btn" style="float: right;">Break</script>
-      <script src="timer.js" class="timer-btn" style="float: right;">Study</script>
+      <div id="Countdown"></div>
     </div>
-  </body>
+
+
+
+
+    <div class="text-box-timer-btns">
+      
+        <script type="text/javascript" src="timer.js"></script>
+        <input type = "button" class="timer-btn" onclick = "startTimer()" value = "Easy">  
+
+
+        <script type="text/javascript" src="timer.js"></script>
+        <input type = "button" class="timer-btn" onclick = "startMediumTimer()" value = "Medium">  
+
+
+        <script type="text/javascript" src="timer.js"></script>
+        <input type = "button" class="timer-btn" onclick = "startHardTimer()" value = "Hard">  
+
+
+        <script type="text/javascript" src="timer.js"></script>
+        <input type = "button" class="timer-btn" onclick = "startBreakTimer()" value = "Break">  
+
+
+        <script type="text/javascript" src="timer.js"></script>
+        <input type = "button" class="timer-btn" onclick = "startStudyTimer()" value = "Study">  
+
+    </div>
+
+
+
+    <div class="text-box-stop-btns">
+
+      <script type="text/javascript" src="timer.js"></script>
+      <input type = "button" class="timer-stop-btn" onclick = "onTimesUp()" value = "Stop">
+     
+    </div>
+     
+
+
+
 </html>

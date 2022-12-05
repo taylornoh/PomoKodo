@@ -8,7 +8,7 @@ const ALERT_THRESHOLD = 5;
 // Defining variables with specific properties like color and threshold
 const COLOR_CODES = {
   info: {
-    color: "green"
+    color: "auburn"
   },
   warning: {
     color: "orange",

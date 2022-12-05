@@ -191,7 +191,7 @@
         color: #fff;
         position:absolute;
         top: 50%;
-        left: 48%;
+        left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
     }
@@ -304,8 +304,8 @@
   }
 
 
-  .base-timer__path-remaining.green {
-      color: rgb(65, 184, 131);
+  .base-timer__path-remaining.auburn {
+      color: #AF4E05;
   }
 
 

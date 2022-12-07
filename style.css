@@ -203,7 +203,7 @@
       width: 70%;
       color: #fff;
       position:absolute;
-      top: 52%;
+      top: 60%;
       left: 93%;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -219,6 +219,16 @@
       transform: translate(-50%, -50%);
       text-align: center;
   }
+
+  .spotify-listen {
+    width: 70%;
+    color: #fff;
+    position:absolute;
+    top: 37%;
+    left: 75%;
+    transform: translate(-49%, -98%);
+    text-align: center;
+}
 
 
   .text-box h1 {

@@ -66,7 +66,7 @@ function onTimesUp() {
 
 // Defining a function that starts the timer
 function startTimer() {
-  TIME_LIMIT = 1200;
+  TIME_LIMIT = 1800;
   // setInterval is a built-in function that is used to set a delay
   // You can cancel the interval using clearInterval()
   timerInterval = setInterval(() => {

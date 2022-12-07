@@ -190,10 +190,13 @@
         width: 70%;
         color: #fff;
         position:absolute;
-        top: 50%;
-        left: 50%;
+        top: 52%;
+        left: 70%;
         transform: translate(-50%, -50%);
         text-align: center;
+        height: 60%;
+        width: 40%;
+        font-weight: bold;
     }
 
   .text-box-timer-btns {
@@ -362,6 +365,9 @@
       margin-right: 30px;
   }
 
+  .about-image {
+    border-radius: 12px;
+  }
 
   .timer-btn:hover {
       border: 1px solid #D16002;
@@ -374,3 +380,4 @@
     background: #D16002;
     transition: 1s;
 }
+

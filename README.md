@@ -1,4 +1,4 @@
-# cpsc-362-project
+# CPSC-362 Project
 
 Fall 2022 CPSC 362-01
 
